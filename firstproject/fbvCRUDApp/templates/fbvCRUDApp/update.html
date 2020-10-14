@@ -1,0 +1,36 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Update</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h2>Update Student</h2>-->
+<!--    <form method="post">-->
+<!--        {% csrf_token %}-->
+<!--        First Name: <input type="text" name="firstName" value="{{student.firstName}}"><br/>-->
+<!--        Last Name: <input type="text" name="lastName" value="{{student.lastName}}"><br/>-->
+<!--        Test Score: <input type="text" name="testScore" value="{{student.testScore}}"><br/>-->
+<!--        <input type="submit" name="" value="Update">-->
+<!--    </form>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update</title>
+</head>
+<body>
+    <h2>Update Student</h2>
+    <form method="post">
+        {% csrf_token %}
+        <table>
+        {{form.as_table}}
+         </table><br/>
+        <input type="submit" name="" value="Update">
+    </form>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends 'cbvAPP/base.html' %}
+{% block body_block %}
+<body>
+    <h2>Delete Student {{student.firstName}} ?</h2>
+    <form method="post">
+        <input type="submit" value="Confirm">
+        <a href="/cbvapp/{{student.id}}">Cancel</a>
+        {%csrf_token%}
+    </form>
+{% endblock %}

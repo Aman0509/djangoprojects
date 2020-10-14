@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Information</title>
+</head>
+<body>
+    <h1>Students</h1>
+    <table border="1">
+        <thead>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Test Score</th>
+        </thead>
+        {% for student in students %}
+        <tr>
+            <td>{{ student.id }}</td>
+            <td>{{ student.firstName }}</td>
+            <td>{{ student.lastName }}</td>
+            <td>{{ student.testScore }}</td>
+            <td><a href="/fbvCRUDapp/delete/{{ student.id }}">Delete</a></td>
+            <td><a href="/fbvCRUDapp/update/{{ student.id }}">Update</a></td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
