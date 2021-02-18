@@ -1,22 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
+html{
+  height: 100%;
+}
 
 body {
   font-family: "Arimo", sans-serif;
+  background-image: linear-gradient(to top left, yellow, #75f147);
 }
 
 header {
-  background-image: linear-gradient(to top left, yellow, #75f147);
   height: 20vh;
+  width: 100%;
 }
 
+.heading:hover{
+  color: white;
+}
+
+.heading{
+  position: relative;
+  top:25%;
+  margin-left: 34%;
+  margin-right:36%;
+  text-align: center;
+  font-size: 70px;
+}
+
+
 .lglo {
-  margin-top: 20px;
+  margin-top: 70px;
   height: 8vh;
 }
 
 .lglobutton {
   display: inline;
-  border: 2px solid white;
+  border: 1px solid black;
   border-radius: 15px;
   margin-left: 26%;
   height: 8vh;
@@ -28,7 +46,7 @@ header {
 .lglobutton:hover {
   background-color: white;
   color: black;
-  border: 2px solid black;
+  border: 1px solid black;
 }
 
 .lglolink {

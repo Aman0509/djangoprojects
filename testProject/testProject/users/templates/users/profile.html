@@ -1,0 +1,22 @@
+{% extends "homepage/base.html" %}
+{% load static %}
+
+{% block link %} <link rel="stylesheet" href="{% static 'users/css/profile.css' %}"/> {% endblock link %}
+{% block title%} Profile View{%endblock title %}
+
+{% block header %} <div class="heading">🎊 Welcome {{user.username}} 🎊</div>
+<small id='logout'><a href="{%url 'logout'%}">Logout</a></small>
+{% endblock header %}
+{%block content%}
+    <div id='outer_container'>
+        <div id="inner_container1">
+            <p class='content'>Wanna Play Games?🤡</p>
+            <ul class='content-list'>
+                <li><a href="{%url 'pig-game'%}">Pig Game</a></li>
+                <li><a href="#">Other Games Coming Soon...</a></li>
+            </ul>
+        </div>
+        <div id="inner_container2">
+        </div>
+    </div>
+{%endblock content%}

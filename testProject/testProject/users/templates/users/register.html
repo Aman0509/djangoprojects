@@ -1,0 +1,27 @@
+{% extends "homepage/base.html" %}
+{% load static %}
+{% block link %}<link rel="stylesheet" href="{% static 'users/css/register_login.css'%}"/>{% endblock link%}
+{%block title%}Register{% endblock title%}
+{% block header %}<div class="heading">Test Project</div>{% endblock header %}
+{% block content %}
+    <div class="header-p">
+                {% if messages %}
+                {% for message in messages %}
+                {{message}}
+                {% endfor %}
+                {% endif %}
+    </div>
+    <div class="container">
+    <fieldset>
+    <legend class='form-head'>Sign Up</legend>
+      <form method="POST">
+        {% csrf_token %} 
+        {{form.as_p}}  
+        <div class="sub"><input type="submit" name="" value="Submit"/></div></br>
+        <small class="sub-small"><a href={% url 'home' %}>Back to Home</a>&emsp;&emsp;<a href={% url 'login' %}>Already have an Account?</a></small>
+    </fieldset>
+      </form>
+    </div>
+{% endblock content %}
+
+

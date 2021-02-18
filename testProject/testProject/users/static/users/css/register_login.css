@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
+html{
+  height: 100%;
+}
+
+body {
+  font-family: "Arimo", sans-serif;
+  background-image: linear-gradient(to top left, yellow, #75f147);
+}
+
+header {
+  height: 20vh;
+  margin-bottom: 5vh;
+}
+
+.heading:hover{
+  color: white;
+}
+
+.heading{
+  position: relative;
+  top:25%;
+  margin-left: 34%;
+  margin-right: 36%;
+  font-size: 70px;
+  text-align: center;
+}
+
+.header-p{
+  position: relative;
+  top:80%;
+  margin-left:35%;
+  margin-right:35%;
+  text-align: center;
+}
+
+.header-div{
+  color: white;
+  font-weight: 400;
+}
+
+.form-head{
+  margin-left: 40%;
+  font-size: 30px;
+}
+
+a:link{
+  color:black;
+  text-decoration: none;
+}
+
+a:visited{
+  color:black;
+}
+
+
+fieldset{
+  border: 1px solid black;
+}
+
+.container {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.sub{
+  padding-left: 40%;
+}
+
+.sub-small{
+  color:white;
+  padding-left: 27%;
+}
+
+input[type=submit] {
+  font-size: 20px;
+  width: 5em;  
+  height: 1.5em;
+}
+
+.form-element{
+  margin-left: 25%;
+}
+
+#logout-msg{
+  margin-left: 25%;
+}

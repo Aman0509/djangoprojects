@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% block link %} {% endblock link %}
+    <title>{%block title%}Base{%endblock title%}</title>
+    {% block js_script %}{% endblock js_script %}
+  </head>
+  <body>
+        <header>{% block header %}{% endblock header %}</header>
+        {%block content%}{% endblock content %}
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{% extends "homepage/base.html" %}
+{% load static %}
+{% block link %}
+<link rel="stylesheet" href="{% static 'users/css/register_login.css'%}"/> 
+{% endblock link %}
+{%block title%}Login{%endblock title%}
+{% block header %}<div class="heading">Test Project</div>{% endblock header %}
+{%block content%}
+    <div class='container'>
+    <form action="" method='POST'>
+        {% csrf_token %}
+        <fieldset>
+        <legend class="form-head">Login</legend>
+        <div class="form-element">{{form.as_p}} </div><br/>
+        <div class="sub"><input type="submit" name="" value="Submit"/></div></br>
+        <small class="sub-small">&emsp;<a href={% url 'home' %}>Back to Home</a>&emsp;&emsp;&emsp;&emsp;<a href={% url 'sign-up' %}>New User?</a></small>
+        </fieldset>
+    </form>
+    </div>
+{%endblock content%}
